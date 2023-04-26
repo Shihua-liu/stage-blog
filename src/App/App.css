@@ -1,0 +1,67 @@
+.loginWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+    gap: 6rem;
+}
+
+.loginHeader {
+    font-size: 150%;
+    padding: 5rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+    color: black;
+    background: rgb(163, 163, 163);
+    width: 40rem;
+    height: 70rem;
+    border-radius: 2.5rem;
+    padding: 5rem 3rem;
+    border: 0.2rem black solid;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inputField {
+    width: 20rem;
+    height: 5rem;
+    font-size: 120%;
+    padding: 0.5rem;
+}
+
+.error {
+    color: crimson;
+    font-size: 90%;
+    padding: 3rem;
+}
+
+.loginBtn {
+    width: 10rem;
+    height: 5rem;
+    font-size: 100%;
+    border-radius: 5rem;
+    border: 0.1rem black solid;
+    background: white;
+}
+.loginBtn:hover{
+    background: rgb(194, 193, 193);
+    color: rgb(80, 79, 79);
+}
