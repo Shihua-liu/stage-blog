@@ -8,11 +8,13 @@ import Data from "../../Data"
 
 import "./Modal.css"
 const Modal = (props) => {
-    const { state } = useLocation()
-    const { loggedIn, id } = state
+    const { state } = useLocation();
+    const { loggedIn, id } = state;
 
-    const [AllData, setAllData] = useState(Data)
-    const [PackhouseData, setPackhouseData] = useState([])
+    const [AllData, setAllData] = useState(Data);
+    const [PackhouseData, setPackhouseData] = useState([]);
+    const [articles, setarticles] = useState([]);
+    const [DataFound, setDatafound] = useState([]);
 
     useEffect(() => {
         AllData.map(data => {
@@ -20,9 +22,15 @@ const Modal = (props) => {
         })
     }, [])
 
-    const info = PackhouseData.map(MappedData => {
-        
-    })
+    useEffect(() => {
+        PackhouseData.map(data => {
+            setarticles(data.id)
+        })
+    }, [AllData]);
+    useEffect(() => {
+        console.log(articles)
+    }, [articles]);
+
 
     return (
         <section className='modal'>
