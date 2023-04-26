@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom"
 
 import './App.css';
-import HomePage from "../components/HomePage/HomePage";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 const App = () => {
   const navigate = useNavigate()
@@ -12,9 +10,6 @@ const App = () => {
   const [error, seterror] = useState("")
   const [loggedIn, Setloggedin] = useState(false)
 
-  useEffect(() => {
-    Setloggedin(false)
-  },[])
 
   const loginData = [{
     id: "1",
@@ -36,7 +31,7 @@ const App = () => {
     loginData.map(login => {
       if (login.username === loginNameInput && login.password === loginPasswordInput) {
         Setloggedin(true)
-        navigate("/HomePage", { state: { loggedIn: loggedIn } }) 
+        navigate("/homepage", { state: { loggedIn: loggedIn } }) 
       }
       else {
         seterror("Gebruikersnaam of wachtwoord is incorrect")

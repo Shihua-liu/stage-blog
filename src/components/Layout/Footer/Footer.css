@@ -1,0 +1,26 @@
+.footer {
+    width: 100vw;
+    min-height: 20vh;
+    background: #888888;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.portfolioLink{
+    color: black;
+    text-decoration: underline;
+}
+.portfolioLink:hover{
+    color: rgb(176, 176, 176);
+}

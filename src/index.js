@@ -4,17 +4,24 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
 import './index.css';
 
-import HomePage from "./components/HomePage/HomePage"
 import App from './App/App';
-
+import HomePage from "./components/HomePage/HomePage"
+import Packhouse from "./components/Packhouse/Packhouse"
+import Modal from './components/Modal/Modal';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />
   },{
-    path: "/HomePage",
+    path: "/homepage",
     element: <HomePage />
+  },{
+    path: "/packhouse",
+    element: <Packhouse />
+  },{
+    path: "/modal/:id",
+    element: <Modal />
   },
 ])
 

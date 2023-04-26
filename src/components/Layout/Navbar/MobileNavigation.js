@@ -7,20 +7,20 @@ import "./Navigation.css"
 import {AiOutlineCloseCircle} from "react-icons/ai"
 import {GiHamburgerMenu} from "react-icons/gi"
 
-const MobileNavigation = () =>{
+const MobileNavigation = (props) =>{
 
     const [open, setOpen] = useState(false);
 
-    const hamburgericon = <GiHamburgerMenu className={Hamburger} size="4rem" color="#48001e"
+    const hamburgericon = <GiHamburgerMenu className={Hamburger} size="4rem" color="black"
     onClick={() => setOpen(!open)}/>
 
-    const closeicon = <AiOutlineCloseCircle className={Hamburger} size="4rem" color="#48001e"
+    const closeicon = <AiOutlineCloseCircle className={Hamburger} size="4rem" color="black"
     onClick={() => setOpen(!open)}/>
     
     return(
         <nav className="MobileNavigation">
             {open ? closeicon : hamburgericon}
-            {open && <NavLinks />}
+            {open && <NavLinks loggedIn={props.loggedIn}/>}
         
         </nav>
         

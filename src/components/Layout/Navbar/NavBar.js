@@ -7,7 +7,7 @@ const NavBar = (props) => {
     return ( 
         <div className="NavBar">
             <Navigation loggedIn={props.loggedIn}/>
-            <MobileNavigation />
+            <MobileNavigation loggedIn={props.loggedIn}/>
         </div>
      );
 }

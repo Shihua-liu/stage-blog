@@ -2,3 +2,86 @@
     width: 100vw;
     min-height: 100vh;
 }
+
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10rem;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.blogMe{
+    width: 60%;
+    background: gray;
+    height: 80vh;
+    padding: 8rem;
+    border-radius: 5rem;
+}
+.introduction{
+    color: black;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.introductionHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stageLijst{
+    padding: 1rem 4rem;
+}
+
+.Bio{
+    padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Stages{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0rem;
+}
+
+.miniNav{
+    width: 20%;
+    background: gray;
+    height: 80vh;
+    padding: 4rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+.linkBox{
+    width: 100%;
+    border-bottom: 0.1rem white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.link{
+    color: white;
+    text-decoration: underline;
+    
+}
