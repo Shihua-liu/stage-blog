@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom"
 
+
 import './App.css';
 
 const App = () => {
@@ -31,7 +32,7 @@ const App = () => {
     loginData.map(login => {
       if (login.username === loginNameInput && login.password === loginPasswordInput) {
         Setloggedin(true)
-        navigate("/homepage", { state: { loggedIn: loggedIn } }) 
+        navigate("/homepage", { state: { loggedIn: loggedIn } })
       }
       else {
         seterror("Gebruikersnaam of wachtwoord is incorrect")
@@ -45,7 +46,6 @@ const App = () => {
       <section className='loginWrapper'>
         <p className='loginHeader'>Login om de Stage Blog te zien van Shi hua Liu</p>
         <div className='login'>
-
           <form action="" className='loginform'>
             <div className="inputs">
               <p className='inputLabels'>Gebruikersnaam</p>

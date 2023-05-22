@@ -2,6 +2,7 @@ import { redirect, useLocation, Link, useNavigate, } from "react-router-dom";
 import NavBar from "../Layout/Navbar/NavBar";
 import Footer from "../Layout/Footer/Footer";
 import NotLoggedIn from "../NotLoggedIn/NotLoggedIn";
+import ReplySection from "../Reply/Reply";
 
 import "./HomePage.css"
 const HomePage = (props) => {
@@ -19,7 +20,9 @@ const HomePage = (props) => {
 
             <NavBar loggedIn={loggedIn} />
             {loggedIn ? (
-                <div className="blog">
+            
+                <>
+                    <div className="blog">
                     <article className="blogMe">
                         <div className="introduction">
                             <header className="introductionHeader">
@@ -39,7 +42,7 @@ const HomePage = (props) => {
                                 <h3>Biografie</h3>
                                 <p>
                                     Ik ben Shi Hua Liu, ik doe momenteel de opleiding Software development op het Mediacollege Amsterdam. <br />
-                                    Ik ben op deze opleiding gekomen omdat mijn vrienden er heen zouden gaan en het leek mij ook wel geïnteressant om dit te doen. <br />
+                                    Ik ben op deze opleiding gekomen omdat mijn vrienden er heen zouden gaan en het leek mij ook wel interessant om dit te doen. <br />
                                     Op dit moment heb ik al wat begrip van React en Vue, maar ik zou graag mijn kennis uit willen breiden in Javascript frameworks. <br />
                                 </p>
 
@@ -72,6 +75,10 @@ const HomePage = (props) => {
                         </div>
                     </div>
                 </div>
+                <div className="replies">
+                    <ReplySection />
+                </div>
+                </>
             ) : (
                 <NotLoggedIn />
             )}

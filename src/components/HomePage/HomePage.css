@@ -16,7 +16,8 @@
 .blogMe{
     width: 60%;
     background: gray;
-    height: 80vh;
+    margin: 8rem 0rem;
+    min-height: 80vh;
     padding: 8rem;
     border-radius: 5rem;
 }
@@ -84,4 +85,13 @@
     color: white;
     text-decoration: underline;
     
+}
+
+.replies{
+    width: 60%;
+    background: gray;
+    margin: 8rem auto;
+    min-height: auto;
+    padding: 8rem;
+    border-radius: 5rem;
 }

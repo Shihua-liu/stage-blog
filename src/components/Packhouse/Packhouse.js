@@ -11,6 +11,7 @@ const Packhouse = (props) => {
 
     const [AllData, setAllData] = useState(Data)
     const [PackhouseData, setPackhouseData] = useState([])
+    const [infoCards, setInfoCards] = useState()
     const { state } = useLocation()
     const loggedIn = state
     const navigate = useNavigate()
@@ -21,17 +22,21 @@ const Packhouse = (props) => {
         })
     }, [])
 
-    const OpenModal = (id) => {
-        navigate(`/modal/${id}`, { state: { loggedIn: loggedIn, id: id}})
+    const OpenModal = (cards,id) => {
+        console.log(cards, "cardds")
+        navigate(`/modal/${id}`, { state: { loggedIn: loggedIn, cards: cards}})
     }
-
-    const card = PackhouseData.map(Cards => {
+    const card = PackhouseData.map(cards => {
+        console.log(cards)
         return (
-            <article className='Card' key={Cards.id} onClick={() => OpenModal(Cards.id)}>
-                <h2>{Cards.weeks}</h2>
+            <article className='Card' key={cards.id} onClick={() => OpenModal(cards, cards.id)}>
+                <h2>{cards.weeks}</h2>
             </article>
         )
     })
+
+    
+
 
     return (
         <section className='collection'>
