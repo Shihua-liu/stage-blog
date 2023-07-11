@@ -44,6 +44,10 @@ const Modal = (props) => {
                             <h3>succes of fouten?</h3>
                             {cards.succesFouten}
                         </div>
+                        <div>
+                            <h3>terug komende werkprocessen </h3>
+                            {cards.werkproc}
+                        </div>
                     </div>
                 </section>
             ) : (

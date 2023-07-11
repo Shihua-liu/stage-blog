@@ -5,6 +5,9 @@ import PHPImg from "./DataImg/PHPImg.webp"
 import ParellaxEffect from "./DataImg/ParellaxEffect.webp"
 import Cookie from "./DataImg/cookie-router.webp"
 import MarketPlace from "./DataImg/marketplace.webp"
+import databaseFetch from "./DataImg/databaseFetch.webp"
+import userDiscordBot from "./DataImg/userDiscordBot.png"
+import MATM from "./DataImg/MATM.jpg"
 
 let stageid = 1
 let id = 1
@@ -22,6 +25,7 @@ const Data = [
             imgUileg: "in dit stukje code kan je zit dat ik in de functie een lege array maak, en door this.customers.projects wil loopen en de uitkomst naar de lege array wil pushen, zodat ik het kan gebruiken.",
             Samenwerking: "Ja, er was wat data dat ik moest ophalen en daar waren andere stagiares aan te werken en ik heb begeleiding gekregen",
             succesFouten: "Sinds vue vegelijkbaar is met react, wou ik door alle data arrays gaan mappen, dat is niet altijd het beste, soms is het beter om te gaan for loopen.",
+            werkproc: 
         }, {
             id: id++,
             weeks: "Week 3 en 4",
@@ -31,6 +35,7 @@ const Data = [
             imgUileg: "hier zie je de plugin slider dat ik heb gebruikt. Dat bespaart veel moeite en tijd ipv zelf een carousel maken.",
             Samenwerking: "nee, ik werkte hier alleen aan, maar ik heb wel begeleiding gekregen",
             succesFouten: "bij een website maken is het hadig om desktop first of mobile first te maken, maar ik probeerde beide tegelijke tijd. ook probeerde ik hun mobile versie tegelijk te maken, wat dus niet nodig was omdt we daar geen design voor hadden.",
+            werkproc:
         }, {
             id: id++,
             weeks: "Week 5 en 6",
@@ -39,7 +44,8 @@ const Data = [
             img: LauncherStatus,
             imgUileg: "met electron kan je de download pauseren, resumeren en de launcher minimaliseren en afsluiten",
             Samenwerking: "nee, ik werkte hier alleen aan, maar ik heb wel begeleiding gekregen",
-            succesFouten: "ik had beter de documentatie kunnen lezen voor de marketplace, er waren dingentjes dat ik over het hoofd had gezien. Voor de game launcher had ik veel beter wat uitleg kunnen vragen omdat de code al was gemaakt en ik moest aanpassingen maken."
+            succesFouten: "ik had beter de documentatie kunnen lezen voor de marketplace, er waren dingentjes dat ik over het hoofd had gezien. Voor de game launcher had ik veel beter wat uitleg kunnen vragen omdat de code al was gemaakt en ik moest aanpassingen maken.",
+            werkproc:
         }, {
             id: id++,
             weeks: "Week 7 en 8",
@@ -49,6 +55,7 @@ const Data = [
             imgUileg: "hier in de foto kan je zien dat ik de connectie met de database heb kunnen maken en de waardes van de formulie kan versturen.",
             Samenwerking: "nee de opdrachten heb ik zelf gemaakt, maar wel met behulp van een youtube tutorial. de marketplace heb ik ook zelf zitten maken.",
             succesFouten: "de opdracht is afgetekent met behaalt.",
+            werkproc:
         }, {
             id: id++,
             weeks: "Week 9 en 10",
@@ -58,6 +65,7 @@ const Data = [
             imgUileg: "bij een scroll, gaat hij de effect calculeren en dan verandert hij het bij zo veel.",
             Samenwerking: "nee, maar ik heb wel wat begelieding gekregen",
             succesFouten: "waar ik trots op ben is dat de parralax effect goed werkt, het geeft echt een leuke 3d effect.",
+            werkproc
         }, {
             id: id++,
             weeks: "Week 11 en 12",
@@ -67,6 +75,7 @@ const Data = [
             imgUileg: "dit is dus de router link dat ik heb gemaakt voor de website, als je erop klikt geeft het een key mee en met dat kan hij de data ophalen",
             Samenwerking: "nee, maar ik heb wel wat begelieding gekregen",
             succesFouten: "succes was dat ik mijn stageblog snel af had gemaakt, kwa fout was dat ik bij de website elke keer zelfde manier gebuikte, dus ik moet meer DRY(don't repeat yourself) zijn.",
+            werkproc:
         },{
             id: id++,
             weeks: "Week 13 en 14",
@@ -75,7 +84,38 @@ const Data = [
             img: MarketPlace,
             imgUileg: "je kan hier zien hoe ik het nu naar toe heb gestyled",
             Samenwerking: "nee, maar ik heb wel feedback gevraagd",
-            succesFouten: "seccues was dat de componenten snel te hergebruiken was en snel kon identificeren wat wat was en wat waar moest",
+            succesFouten: "succues was dat de componenten snel te hergebruiken was en snel kon identificeren wat wat was en wat waar moest",
+            werkproc:
+        },{
+            id: id++,
+            weeks: "Week 15 en 16",
+            opdracht: "er was niet echt een taak voor mij, dus ik was begonnen met een mini project, het was een inlog systeem bouwen met een database api",
+            stappenPlan: "eerst begonnen met de design, login en registreer form gemaakt en daarna ervoor gezorgd dat de data opgestuurd wordt",
+            img: databaseFetch,
+            imgUileg: "dit is een manier hoe je data kan ophalen, en kan vergelijken of de data klopt of niet",
+            Samenwerking: "nee, maar iemand heeft me wel geholpen met de huisstyle voor de pagina",
+            succesFouten: "ik had best wel wat problemen met databases zoeken, maar ik heb wel nu de goeie gevonden, maar de documenten moet ik beter door lezen.",
+            werkproc:
+        },{
+            id: id++,
+            weeks: "Week 17 en 18",
+            opdracht: "ik heb veel lopen kijken hoe ik unity werkend kon krijgen, geen oplossing, dus ben een discord bot gaan maken en aan een nieuwe taak gaan beginnen",
+            stappenPlan: "voor de bot ben eerst gaan kijken hoe je een command maakt en custom commands en alle data goed op pakt en mooit heb kunnen zetten. voor de taak had ik eerst zitten kijken hoe het werkte, hoe de videos afspeelde en hoe de vlakken werden ingeladen.",
+            img: userDiscordBot,
+            imgUileg: "hier zie je de data dat ik ophaal van een account, je kan de indeling bepalen, kleur aan de zijkant en de footer tekst veranderen",
+            Samenwerking: "ja, ik werkte met iemand van school",
+            succesFouten: "ik maakte veel fouten met de commands, wat ik hiermee bedoel is dat sommige functies niet werkte, waardoor ik veel tijd moet gebruiken om te kijken wat wel werkte en wat niet",
+            werkproc:
+        },{
+            id: id++,
+            weeks: "Week 19 en 20",
+            opdracht: "aan de nieuwe taak veel progressie gemaakt, is een game waar je met de gerenderde video's navigeer en een puzzel oplos",
+            stappenPlan: "de lobby en de eerste 3 kamers zijn werkend met de alle video's na veel proberen en testen",
+            img: MATM,
+            imgUileg: "code dat ik heb gemaakt om de ingevoerde wachtwoord voor de puzzel heb gemaakt. dat samenwerkt met een virtuele keyboard",
+            Samenwerking: "ja, ik werkte samen met mijn baas",
+            succesFouten: "er waren veel succeses en fouten. een succes was de video's echt goed werkend te krijgen en een fout was dat ik sommige delen van code opnieuw gebruikte dus ik 'DRY' mezelf",
+            werkproc:
         }
     ]
     }
