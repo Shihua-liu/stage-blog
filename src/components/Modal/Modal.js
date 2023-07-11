@@ -18,34 +18,42 @@ const Modal = (props) => {
         <section className='modal'>
             <NavBar loggedIn={loggedIn} />
             {loggedIn ? (
-
-                <section className='modalContainer'>
-                    <header className="modalHeader">
-                        <h2>{cards.weeks}</h2>
-                    </header>
-                    <div className='modalContent'>
-                        <div>
-                            <h3>opdracht:</h3>
-                            {cards.opdracht}
+                <>
+                    <section className='modalContainer'>
+                        <header className="modalHeader">
+                            <h2>{cards.weeks}</h2>
+                        </header>
+                        <div className='modalContent'>
+                            <div>
+                                <h3>opdracht:</h3>
+                                {cards.opdracht}
+                            </div>
+                            <div className='modalimg'>
+                                <h3>foto:</h3>
+                                <img className='modalimgimg' src={cards.img} alt="" />
+                            </div>
+                            <div>
+                                <h3>uitleg van de foto</h3>
+                                {cards.imgUileg}
+                            </div>
+                            <div>
+                                <h3>samenwerking:</h3>
+                                {cards.Samenwerking}
+                            </div>
+                            <div>
+                                <h3>succes of fouten?</h3>
+                                {cards.succesFouten}
+                            </div>
+                            <div>
+                                <h3>terug komende werkprocessen </h3>
+                                {cards.werkproc}
+                            </div>
                         </div>
-                        <div className='modalimg'>
-                            <h3>foto:</h3>
-                            <img className='modalimgimg' src={cards.img} alt="" />
-                        </div>
-                        <div>
-                            <h3>uitleg van de foto</h3>
-                            {cards.imgUileg}
-                        </div>
-                        <div>
-                            <h3>samenwerking:</h3>
-                            {cards.Samenwerking}
-                        </div>
-                        <div>
-                            <h3>succes of fouten?</h3>
-                            {cards.succesFouten}
-                        </div>
+                    </section>
+                    <div className="replies">
+                        <ReplySection />
                     </div>
-                </section>
+                </>
             ) : (
                 <NotLoggedIn />
             )}
