@@ -4,6 +4,7 @@ import { useParams, useLocation } from "react-router-dom";
 import NavBar from '../Layout/Navbar/NavBar';
 import NotLoggedIn from '../NotLoggedIn/NotLoggedIn';
 import Footer from '../Layout/Footer/Footer';
+import ReplySection from "../Reply/Reply";
 
 import "./Modal.css"
 const Modal = (props) => {

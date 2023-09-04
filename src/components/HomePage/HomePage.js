@@ -15,6 +15,11 @@ const HomePage = (props) => {
         navigate("/packhouse", { state: { loggedIn: loggedIn } })
     }
 
+    const RedirectPackhouseChapter2 = () => {
+        navigate("/packhouse-chapter-2", { state: { loggedIn: loggedIn } })
+
+    }
+
     return (
         <section className="content">
 
@@ -35,7 +40,7 @@ const HomePage = (props) => {
                                 <h4>Stage gelopen bij deze bedrijven:</h4>
                                 <ul className="stageLijst">
                                     <li>Packhouse</li>
-                                    <li>TBD</li>
+                                    <li>Packhouse</li>
                                 </ul>
                             </div>
                             <div className="Bio">
@@ -57,9 +62,10 @@ const HomePage = (props) => {
                                         </p>
                                     </div>
                                     <div>
-                                        <h4>Bedrijf: TBD</h4>
+                                        <h4>Bedrijf: Packhouse</h4>
                                         <p>
-                                            TBD
+                                            ben hier weer begonnen met mijn 2de stage omdat de sfeer en de team geweldig is. <br />
+                                            ik ga nu meer aan unity werken ipv vuejs
                                         </p>
                                     </div>
                                 </div>
@@ -73,6 +79,12 @@ const HomePage = (props) => {
                                 <a className="link" href="" onClick={RedirectPackhouse}>Packhouse</a>
                             </div>
                         </div>
+                        <div className="links">
+                            <div className="linkBox">
+                                <a className="link" href="" onClick={RedirectPackhouseChapter2}>Packhouse chapter 2</a>
+                            </div>
+                        </div>
+            
                     </div>
                 </div>
                 <div className="replies">
