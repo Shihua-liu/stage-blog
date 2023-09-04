@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Data2 from "../../Data"
+import Data2 from "../../Data2"
 import { useLocation, useNavigate } from "react-router-dom"
 
 import "./Packhouse.css"
