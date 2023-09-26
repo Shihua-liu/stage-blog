@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Data2 from "../../Data2"
 import { useLocation, useNavigate } from "react-router-dom"
 
-import "./Packhouse.css"
+import "./PackhouseChp2.css"
 import NavBar from '../Layout/Navbar/NavBar';
 import Footer from '../Layout/Footer/Footer';
 import NotLoggedIn from '../NotLoggedIn/NotLoggedIn';
