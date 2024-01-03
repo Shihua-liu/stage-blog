@@ -35,16 +35,22 @@ const Modal = (props) => {
                             </div>
                             <div>
                                 <h3>uitleg van de foto</h3>
-                                {cards.imgUileg}
+                                {cards?.imgUileg}
                             </div>
-                            <div>
-                                <h3>samenwerking:</h3>
-                                {cards.Samenwerking}
-                            </div>
-                            <div>
-                                <h3>succes of fouten?</h3>
-                                {cards.succesFouten}
-                            </div>
+                            {cards?.Samenwerking ? (
+                                <div>
+                                    <h3>samenwerking:</h3>
+                                    {cards?.Samenwerking}
+                                </div>
+
+                            ) : <span></span>}
+                            {cards?.succesFouten ? (
+                                <div>
+                                    <h3>succes of fouten?</h3>
+                                    {cards?.succesFouten}
+                                </div>
+
+                            ) : <span></span>}
                             <div>
                                 <h3>terug komende werkprocessen </h3>
                                 {cards.werkproc}
@@ -57,9 +63,10 @@ const Modal = (props) => {
                 </>
             ) : (
                 <NotLoggedIn />
-            )}
+            )
+            }
             <Footer />
-        </section>
+        </section >
     );
 }
 
