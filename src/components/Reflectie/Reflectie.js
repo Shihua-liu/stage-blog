@@ -74,6 +74,7 @@ const Reflectie = (props) => {
                             - Crazy game show<br />
                             - Japanese Born Ape Society website en marketplace (JBAS)<br />
                             - Packhouse Portal
+                            - Vue library
                         </p>
                     </section>
 
@@ -91,10 +92,6 @@ const Reflectie = (props) => {
                             In het begin had ik bijvoorbeeld gewerkt in de portal en dat was om soort de deadlines van de taken of milestones te laten zien, en volgens een oude stagiare had dat hem enorm geholpen met andere taken van hem.
                         </p>
                         <img src={GitAccount} alt="" />
-                    </section>
-
-                    <section>
-
                     </section>
                 </div>
             ) : (
