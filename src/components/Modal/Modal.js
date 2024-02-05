@@ -25,18 +25,18 @@ const Modal = (props) => {
                             <h2>{cards.weeks}</h2>
                         </header>
                         <div className='modalContent'>
-                            <div>
+                            { cards?.opdracht ? (<div>
                                 <h3>opdracht:</h3>
-                                {cards.opdracht}
-                            </div>
+                                {cards?.opdracht}
+                            </div>) : <span></span>}
                             <div className='modalimg'>
                                 <h3>foto:</h3>
                                 <img className='modalimgimg' src={cards.img} alt="" />
                             </div>
-                            <div>
+                            {cards?.imgUileg ? (<div>
                                 <h3>uitleg van de foto</h3>
                                 {cards?.imgUileg}
-                            </div>
+                            </div>) : <span></span>}
                             {cards?.Samenwerking ? (
                                 <div>
                                     <h3>samenwerking:</h3>
@@ -51,10 +51,10 @@ const Modal = (props) => {
                                 </div>
 
                             ) : <span></span>}
-                            <div>
+                            {cards?.werkproc ? (<div>
                                 <h3>terug komende werkprocessen </h3>
                                 {cards.werkproc}
-                            </div>
+                            </div>) : <span></span>}
                         </div>
                     </section>
                     <div className="replies">

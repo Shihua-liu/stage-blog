@@ -9,6 +9,7 @@ import HomePage from "./components/HomePage/HomePage"
 import Packhouse from "./components/Packhouse/Packhouse"
 import PackhouseChp2 from "./components/PackhouseChp2/PackhouseChp2"
 import Modal from './components/Modal/Modal';
+import Reflectie from "./components/Reflectie/Reflectie"
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,9 @@ const router = createBrowserRouter([
   }, {
     path: "/packhouse-Chapter-2",
     element: <PackhouseChp2 />
+  },{
+    path: "/reflectie",
+    element: <Reflectie />
   }, {
     path: "/modal/:id",
     element: <Modal />

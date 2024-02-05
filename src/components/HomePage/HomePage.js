@@ -20,6 +20,10 @@ const HomePage = (props) => {
 
     }
 
+    const Reflection = () => {
+        navigate("/reflectie", { state: { loggedIn: loggedIn } } )
+    }
+
     return (
         <section className="content">
 
@@ -85,7 +89,11 @@ const HomePage = (props) => {
                                     <a className="link" href="" onClick={RedirectPackhouseChapter2}>Packhouse chapter 2</a>
                                 </div>
                             </div>
-
+                            <div className="links">
+                                <div className="linkBox">
+                                    <a className="link" href="" onClick={Reflection}>reflectie</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="replies">
