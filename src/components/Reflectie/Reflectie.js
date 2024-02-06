@@ -90,9 +90,13 @@ const Reflectie = (props) => {
                             Mijn andere bijdragen waren niet enorm groot. daar heb ik wel wat aan gezeten maar dat was vooral bugfixes, styling veranderingen en/of toevoegingen of veranderingen.<br/><br/>
 
                             In het begin had ik bijvoorbeeld gewerkt in de portal en dat was om soort de deadlines van de taken of milestones te laten zien, en volgens een oude stagiare had dat hem enorm geholpen met andere taken van hem.
+                            <br/><br/>
+                            Als ik beetje vergelijk met hoe ik toen en nu werk, is het wel een verschil. Ik wist eerst niet hoe ik bijvoorbeeld een probleem moet aanpakken, maar nu kan ik heel makkelijk weten wat ik moet gebruiken en wanneer het de beste moment is.  
                         </p>
-                        <img src={GitAccount} alt="" />
+                        <img src={GitAccount} alt="github account" />
                     </section>
+
+
                 </div>
             ) : (
                 <NotLoggedIn />

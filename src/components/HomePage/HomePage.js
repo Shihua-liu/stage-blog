@@ -2,7 +2,7 @@ import { redirect, useLocation, Link, useNavigate, } from "react-router-dom";
 import NavBar from "../Layout/Navbar/NavBar";
 import Footer from "../Layout/Footer/Footer";
 import NotLoggedIn from "../NotLoggedIn/NotLoggedIn";
-import ReplySection from "../Reply/Reply";
+import DisqusComments from "../Reply/Reply";
 
 import "./HomePage.css"
 const HomePage = (props) => {
@@ -96,9 +96,8 @@ const HomePage = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="replies">
-                        <ReplySection />
-                    </div>
+
+                    
                 </>
             ) : (
                 <NotLoggedIn />

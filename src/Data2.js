@@ -9,8 +9,8 @@ import roomsLocked from "./DataImg/locked-rooms.jpg"
 import old from "./DataImg/old.jpg"
 import touch from "./DataImg/touch.png"
 
-let stageid = 1
-let id = 1
+let stageid = 2
+let id = 11
 
 
 const Data = [

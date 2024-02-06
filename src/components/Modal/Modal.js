@@ -4,14 +4,12 @@ import { useParams, useLocation } from "react-router-dom";
 import NavBar from '../Layout/Navbar/NavBar';
 import NotLoggedIn from '../NotLoggedIn/NotLoggedIn';
 import Footer from '../Layout/Footer/Footer';
-import ReplySection from "../Reply/Reply";
+import DisqusComments from "../Reply/Reply";
 
 import "./Modal.css"
 const Modal = (props) => {
     const { state } = useLocation();
     const { loggedIn, cards } = state;
-
-
 
 
 
@@ -25,7 +23,7 @@ const Modal = (props) => {
                             <h2>{cards.weeks}</h2>
                         </header>
                         <div className='modalContent'>
-                            { cards?.opdracht ? (<div>
+                            {cards?.opdracht ? (<div>
                                 <h3>opdracht:</h3>
                                 {cards?.opdracht}
                             </div>) : <span></span>}
@@ -58,9 +56,15 @@ const Modal = (props) => {
                         </div>
                     </section>
                     <div className="replies">
-                        <ReplySection />
+                        <DisqusComments
+                            shortname="stage-4"
+                            url="https://31684.hosts1.ma-cloud.nl/homepage"
+                            identifier={cards.id}
+                            title="Your Page Title"
+                        />
                     </div>
                 </>
+
             ) : (
                 <NotLoggedIn />
             )
