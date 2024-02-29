@@ -96,7 +96,14 @@ const Reflectie = (props) => {
                         <img src={GitAccount} alt="github account" />
                     </section>
 
-
+                    <section>
+                        <h2>
+                            Conclusie:
+                        </h2>
+                        <p>
+                            Ik heb beide stages gelopen bij Packhouse en heb veel genoten en geleerd. Ik kan ze niet genoeg bedanken dat ik hier mocht zijn en dat ik met hun mocht mee werken aan de projecten. De frameworks dat ik hier heb geleerd is VueJS en Typescript en dat mijn doel. Daarnaast heb ik geleerd hoe het is om in een bedrijf te werken en het is zeker anders, zoals de daily standups, hoe je in github werkt, de communicatie, in een team werken en andere mensen helpen. Nogmaals, ik kan ze niet genoeg bedanken dat ik hier kon zijn en dit kon ervaren.   
+                        </p>
+                    </section>
                 </div>
             ) : (
                 <NotLoggedIn />
